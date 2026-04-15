@@ -1,0 +1,74 @@
+{
+  "manifestName": {
+    "message": "Pelacak Presensi Google Meet"
+  },
+  "manifestDescription": {
+    "message": "Melacak kehadiran Google Meet termasuk foto profil dan waktu bergabung/keluar."
+  },
+  "appName": {
+    "message": "Presensi GMeet"
+  },
+  "viewAttendance": {
+    "message": "Lihat Presensi"
+  },
+  "tip": {
+    "message": "Tip: Biarkan panel 'Orang' di Google Meet terbuka untuk memastikan semua peserta terdaftar."
+  },
+  "dashboardTitle": {
+    "message": "Dasbor Presensi Google Meet"
+  },
+  "clearData": {
+    "message": "Hapus Semua Data"
+  },
+  "savePdf": {
+    "message": "Simpan sebagai PDF"
+  },
+  "saveCsv": {
+    "message": "Simpan sebagai CSV"
+  },
+  "recordAttendance": {
+    "message": "Rekam Presensi"
+  },
+  "recording": {
+    "message": "MEREKAM..."
+  },
+  "recorded": {
+    "message": "Terekam!"
+  },
+  "noData": {
+    "message": "Belum ada data presensi yang ditangkap. Mulailah Google Meet untuk melihatnya di sini."
+  },
+  "meetingId": {
+    "message": "ID Rapat: "
+  },
+  "sessionStarted": {
+    "message": "Sesi Dimulai: "
+  },
+  "participant": {
+    "message": "Peserta"
+  },
+  "firstJoined": {
+    "message": "Pertama Bergabung"
+  },
+  "lastSeen": {
+    "message": "Terakhir Terlihat"
+  },
+  "presence": {
+    "message": "Kehadiran"
+  },
+  "min": {
+    "message": "menit"
+  },
+  "mins": {
+    "message": "menit"
+  },
+  "confirmClear": {
+    "message": "Apakah Anda yakin ingin menghapus semua catatan presensi?"
+  },
+  "noParticipantsLog": {
+    "message": "[GMeet Attendance] Tidak ada peserta yang ditemukan. Apakah panel 'Orang' terbuka?"
+  },
+  "you": {
+    "message": "Anda"
+  }
+}

@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+body { 
+  font-family: 'Courier New', Courier, monospace; 
+  background-color: #FFDE59; /* Vibrant Yellow */
+  margin: 0; 
+  padding: 40px 10px; 
+  color: #000;
+}
+.container { 
+  width: 100%;
+  max-width: 1000px; 
+  margin: 0 auto; 
+  background: #FFF; 
+  padding: 20px; 
+  border: 4px solid #000;
+  box-shadow: 10px 10px 0px #000; 
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #000;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+h1 { 
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin: 0;
+}
+.actions {
+  display: flex;
+  gap: 15px;
+}
+button {
+  padding: 12px 24px;
+  border: 3px solid #000;
+  cursor: pointer;
+  font-weight: 900;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 0px #000;
+  transition: all 0.1s;
+}
+button:active {
+  box-shadow: 0px 0px 0px #000;
+  transform: translate(4px, 4px);
+}
+#savePdf { background-color: #5CE1E6; } /* Cyan */
+#saveCsv { background-color: #7ED957; } /* Green */
+#clearData { background-color: #FF5757; } /* Red */
+
+.meeting-header { 
+  display: flex; 
+  justify-content: space-between; 
+  margin-bottom: 15px; 
+  background: #000;
+  color: #FFF;
+  padding: 10px 20px;
+  border: 3px solid #000;
+}
+.meeting-id { font-weight: 900; }
+
+.meeting-section {
+  margin-bottom: 50px;
+}
+.table-container {
+  overflow-x: auto;
+  border: 4px solid #000;
+  background: #FFF;
+}
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  border: none;
+  min-width: 600px;
+}
+th, td { 
+  text-align: left; 
+  padding: 15px; 
+  border: 3px solid #000; 
+  vertical-align: middle;
+}
+th {
+  background: #F1F1F1;
+}
+.participant-cell {
+  display: flex;
+  align-items: center;
+}
+.avatar { 
+  width: 45px; 
+  height: 45px; 
+  border: 3px solid #000;
+  margin-right: 15px;
+  background: #FFF;
+  flex-shrink: 0;
+}
+.badge {
+  background: #FFBD59;
+  padding: 5px 10px;
+  border: 2px solid #000;
+  font-weight: 900;
+  white-space: nowrap;
+}
+@media print {
+  body { background: white; }
+  .container { box-shadow: none; border: 2px solid #000; }
+  .actions { display: none; }
+}

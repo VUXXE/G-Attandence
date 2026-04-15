@@ -1,0 +1,74 @@
+{
+  "manifestName": {
+    "message": "Google Meet Attendance Tracker"
+  },
+  "manifestDescription": {
+    "message": "Tracks Google Meet attendance including profile pictures and join/leave times."
+  },
+  "appName": {
+    "message": "GMeet Attendance"
+  },
+  "viewAttendance": {
+    "message": "View Attendance"
+  },
+  "tip": {
+    "message": "Tip: Keep the 'People' panel open in Google Meet to ensure all participants are tracked."
+  },
+  "dashboardTitle": {
+    "message": "Google Meet Attendance Dashboard"
+  },
+  "clearData": {
+    "message": "Clear All Data"
+  },
+  "savePdf": {
+    "message": "Save as PDF"
+  },
+  "saveCsv": {
+    "message": "Save as CSV"
+  },
+  "recordAttendance": {
+    "message": "Record Attendance"
+  },
+  "recording": {
+    "message": "RECORDING..."
+  },
+  "recorded": {
+    "message": "Recorded!"
+  },
+  "noData": {
+    "message": "No attendance data captured yet. Start a Google Meet to see it here."
+  },
+  "meetingId": {
+    "message": "Meeting ID: "
+  },
+  "sessionStarted": {
+    "message": "Session Started: "
+  },
+  "participant": {
+    "message": "Participant"
+  },
+  "firstJoined": {
+    "message": "First Joined"
+  },
+  "lastSeen": {
+    "message": "Last Seen"
+  },
+  "presence": {
+    "message": "Presence"
+  },
+  "min": {
+    "message": "min"
+  },
+  "mins": {
+    "message": "mins"
+  },
+  "confirmClear": {
+    "message": "Are you sure you want to delete all attendance records?"
+  },
+  "noParticipantsLog": {
+    "message": "[GMeet Attendance] No participants found. Is the 'People' panel open?"
+  },
+  "you": {
+    "message": "You"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_manifestName__",
+  "default_locale": "en",
+  "version": "1.0",
+  "description": "__MSG_manifestDescription__",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["dashboard.html", "dashboard.js", "dashboard.css"],
+      "matches": ["https://meet.google.com/*"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "gmeet-attendance@example.com"
+    }
+  }
+}
