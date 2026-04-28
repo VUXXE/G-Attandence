@@ -17,62 +17,106 @@ async function loadAttendance() {
   const sortedIds = Object.keys(meetings).sort((a, b) => meetings[b].startTime - meetings[a].startTime);
 
   if (sortedIds.length === 0) {
-    list.innerHTML = `<div class="empty-state">${_runtime.i18n.getMessage('noData') || 'No attendance data captured yet.'}</div>`;
+    list.textContent = '';
+    const emptyState = document.createElement('div');
+    emptyState.className = 'empty-state';
+    emptyState.textContent = _runtime.i18n.getMessage('noData') || 'No attendance data captured yet.';
+    list.appendChild(emptyState);
     return;
   }
 
-  list.innerHTML = '';
+  list.textContent = '';
   sortedIds.forEach(id => {
     const meeting = meetings[id];
     const section = document.createElement('div');
     section.className = 'meeting-section';
 
-    const header = `
-      <div class="meeting-header">
-        <span class="meeting-id">${_runtime.i18n.getMessage('meetingId') || 'ID: '}${id}</span>
-        <span class="meeting-time">${_runtime.i18n.getMessage('sessionStarted') || ''}${new Date(meeting.startTime).toLocaleString()}</span>
-      </div>
-    `;
+    // Header
+    const headerDiv = document.createElement('div');
+    headerDiv.className = 'meeting-header';
+    
+    const idSpan = document.createElement('span');
+    idSpan.className = 'meeting-id';
+    idSpan.textContent = (_runtime.i18n.getMessage('meetingId') || 'ID: ') + id;
+    
+    const timeSpan = document.createElement('span');
+    timeSpan.className = 'meeting-time';
+    timeSpan.textContent = (_runtime.i18n.getMessage('sessionStarted') || '') + new Date(meeting.startTime).toLocaleString();
+    
+    headerDiv.appendChild(idSpan);
+    headerDiv.appendChild(timeSpan);
+    section.appendChild(headerDiv);
 
-    let rows = '';
+    // Table
+    const tableContainer = document.createElement('div');
+    tableContainer.className = 'table-container';
+    
+    const table = document.createElement('table');
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    
+    ['participant', 'firstJoined', 'lastSeen', 'presence'].forEach(key => {
+      const th = document.createElement('th');
+      th.textContent = _runtime.i18n.getMessage(key) || key.charAt(0).toUpperCase() + key.slice(1);
+      headerRow.appendChild(th);
+    });
+    
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    const tbody = document.createElement('tbody');
     const participants = Object.values(meeting.attendance).sort((a, b) => a.firstSeen - b.firstSeen);
     
     participants.forEach(p => {
-      const avatarSrc = p.avatar || 'https://lh3.googleusercontent.com/a/default-user=s32-c';
+      const tr = document.createElement('tr');
+      
+      // Participant Cell
+      const tdName = document.createElement('td');
+      const cellDiv = document.createElement('div');
+      cellDiv.className = 'participant-cell';
+      
+      const img = document.createElement('img');
+      img.className = 'avatar';
+      img.src = p.avatar || 'https://lh3.googleusercontent.com/a/default-user=s32-c';
+      img.referrerPolicy = 'no-referrer';
+      img.onerror = () => { img.src = 'https://lh3.googleusercontent.com/a/default-user=s32-c'; };
+      
+      const nameSpan = document.createElement('span');
+      nameSpan.style.fontWeight = '900';
+      nameSpan.textContent = p.name;
+      
+      cellDiv.appendChild(img);
+      cellDiv.appendChild(nameSpan);
+      tdName.appendChild(cellDiv);
+      tr.appendChild(tdName);
+
+      // Joined
+      const tdJoined = document.createElement('td');
+      tdJoined.textContent = new Date(p.firstSeen).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      tr.appendChild(tdJoined);
+
+      // Last Seen
+      const tdLast = document.createElement('td');
+      tdLast.textContent = new Date(p.lastSeen).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      tr.appendChild(tdLast);
+
+      // Presence
+      const tdPresence = document.createElement('td');
+      const badge = document.createElement('span');
+      badge.className = 'badge';
       const duration = Math.round((p.lastSeen - p.firstSeen) / 60000);
       const minStr = _runtime.i18n.getMessage(duration === 1 ? 'min' : 'mins') || (duration === 1 ? 'min' : 'mins');
-      
-      rows += `
-        <tr>
-          <td>
-            <div class="participant-cell">
-              <img class="avatar" src="${avatarSrc}" referrerpolicy="no-referrer" onerror="this.src='https://lh3.googleusercontent.com/a/default-user=s32-c'">
-              <span style="font-weight: 900;">${p.name}</span>
-            </div>
-          </td>
-          <td>${new Date(p.firstSeen).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</td>
-          <td>${new Date(p.lastSeen).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</td>
-          <td><span class="badge">${duration} ${minStr}</span></td>
-        </tr>
-      `;
+      badge.textContent = `${duration} ${minStr}`;
+      tdPresence.appendChild(badge);
+      tr.appendChild(tdPresence);
+
+      tbody.appendChild(tr);
     });
 
-    section.innerHTML = `
-      ${header}
-      <div class="table-container">
-        <table>
-          <thead>
-            <tr>
-              <th>${_runtime.i18n.getMessage('participant') || 'Participant'}</th>
-              <th>${_runtime.i18n.getMessage('firstJoined') || 'Joined'}</th>
-              <th>${_runtime.i18n.getMessage('lastSeen') || 'Last Seen'}</th>
-              <th>${_runtime.i18n.getMessage('presence') || 'Presence'}</th>
-            </tr>
-          </thead>
-          <tbody>${rows}</tbody>
-        </table>
-      </div>
-    `;
+    table.appendChild(tbody);
+    tableContainer.appendChild(table);
+    section.appendChild(tableContainer);
+    
     list.appendChild(section);
   });
 }

@@ -142,7 +142,11 @@ function createUI() {
 
   const btn = document.createElement('button');
   const recordText = _runtime.i18n.getMessage('recordAttendance') || 'Record Attendance';
-  btn.innerHTML = `<span>📊</span> ${recordText}`;
+  btn.textContent = '';
+  const iconSpan = document.createElement('span');
+  iconSpan.textContent = '📊';
+  btn.appendChild(iconSpan);
+  btn.appendChild(document.createTextNode(' ' + recordText));
   btn.style.cssText = `
     padding: 15px 25px;
     background: #FFDE59;
@@ -179,7 +183,11 @@ function createUI() {
     setTimeout(() => {
       _runtime.runtime.sendMessage({ type: 'OPEN_DASHBOARD' });
       btn.style.background = '#FFDE59';
-      btn.innerHTML = `<span>📊</span> ${recordText}`;
+      btn.textContent = '';
+      const iconSpan = document.createElement('span');
+      iconSpan.textContent = '📊';
+      btn.appendChild(iconSpan);
+      btn.appendChild(document.createTextNode(' ' + recordText));
     }, 1000);
   };
 
