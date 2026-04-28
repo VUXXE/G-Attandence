@@ -51,6 +51,7 @@ Karena ekstensi ini didistribusikan secara mandiri, ikuti langkah mudah ini:
 
 ---
 
+<<<<<<< HEAD
 ## 🦊 Tersedia di Firefox
 Ekstensi ini juga tersedia secara resmi untuk pengguna Firefox! Anda dapat langsung mengunduhnya melalui tautan di bawah ini tanpa perlu instalasi manual:
 
@@ -66,6 +67,8 @@ Ekstensi ini juga tersedia secara resmi untuk pengguna Firefox! Anda dapat langs
 
 ---
 
+=======
+>>>>>>> 102605f5ae8b8ec7cd451ecc4c8561fab843d717
 ## 🤝 Kontribusi & Saran
 Punya ide fitur baru atau menemukan bug? Silakan buka *Issue* atau kirimkan *Pull Request* di repositori ini.
 
