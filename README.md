@@ -51,13 +51,6 @@ Karena ekstensi ini didistribusikan secara mandiri, ikuti langkah mudah ini:
 
 ---
 
-## 🏗️ Tech Stack
-- **Frontend:** Vanilla JavaScript, HTML5, CSS3.
-- **API:** Chrome Extension API (Manifest V3).
-- **Processing:** Python (Pillow) untuk optimasi aset gambar.
-
----
-
 ## 🤝 Kontribusi & Saran
 Punya ide fitur baru atau menemukan bug? Silakan buka *Issue* atau kirimkan *Pull Request* di repositori ini.
 
