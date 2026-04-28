@@ -1,4 +1,4 @@
-# 🎓 Google Meet Attendance Tracker 🚀
+# 🎓 G-Attendance 🚀
 
 [![Version](https://img.shields.io/badge/version-1.2-blue.svg)](https://github.com/)
 [![Manifest](https://img.shields.io/badge/manifest-V3-orange.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
@@ -9,6 +9,7 @@
 ---
 
 ## 🌟 What's New in v1.2?
+
 - 🎨 **New Icon System:** High-resolution icons optimized for all sizes (16px - 128px).
 - 📜 **Complete Documentation:** Improved README to help new users get started easily.
 - 🧹 **Package Optimization:** Cleaned up distribution files for a lighter footprint.
@@ -17,7 +18,7 @@
 
 ## ✨ Key Features
 
-- 🕒 **Real-time Tracking:** Automatically logs *Join* & *Leave* times.
+- 🕒 **Real-time Tracking:** Automatically logs _Join_ & _Leave_ times.
 - 🖼️ **Visual Identity:** Displays participant profile pictures for quick verification.
 - 📊 **Interactive Dashboard:** Clean and easy-to-read attendance statistics.
 - 📥 **One-Click Export:** Save reports in **PDF** (print-ready) or **CSV** (for Excel/Sheets).
@@ -40,6 +41,7 @@ Since this extension is distributed independently, follow these simple steps:
 ---
 
 ## 🦊 Available on Firefox
+
 This extension is also officially available for Firefox users! You can install it directly via the link below:
 
 [![Firefox](https://img.shields.io/badge/Firefox-Add--ons-orange.svg)](https://addons.mozilla.org/en-US/firefox/addon/g-attendance/)  
@@ -60,6 +62,7 @@ This extension is also officially available for Firefox users! You can install i
 ---
 
 ## 🏗️ Tech Stack
+
 - **Frontend:** Vanilla JavaScript, HTML5, CSS3.
 - **API:** Chrome Extension API (Manifest V3).
 - **Processing:** Python (Pillow) for asset optimization.
@@ -67,6 +70,7 @@ This extension is also officially available for Firefox users! You can install i
 ---
 
 ## 🤝 Contribution & Feedback
-Have a feature idea or found a bug? Feel free to open an *Issue* or submit a *Pull Request* to this repository.
+
+Have a feature idea or found a bug? Feel free to open an _Issue_ or submit a _Pull Request_ to this repository.
 
 Made with ❤️ for teachers, students, and professionals.
