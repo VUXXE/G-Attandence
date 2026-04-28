@@ -4,63 +4,61 @@
 [![Manifest](https://img.shields.io/badge/manifest-V3-orange.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-Absensi otomatis untuk Google Meet yang praktis, ringan, dan akurat! Pantau siapa saja yang hadir, kapan mereka masuk, dan berapa lama mereka bertahan di dalam meeting.
+**Absensi otomatis untuk Google Meet yang praktis, ringan, dan akurat!** Pantau siapa saja yang hadir, kapan mereka masuk, dan berapa lama mereka bertahan di dalam meeting tanpa repot mencatat manual.
 
 ---
 
-## ✨ Fitur Unggulan
-
-- 🕒 **Real-time Tracking:** Mencatat waktu bergabung (*join*) dan waktu keluar (*leave*) secara otomatis.
-- 🖼️ **Capture Foto Profil:** Mempermudah identifikasi peserta dengan tampilan avatar.
-- 📊 **Dashboard Interaktif:** Lihat statistik kehadiran dalam satu halaman yang bersih.
-- 📥 **Ekspor Data:** Simpan laporan kehadiran dalam format **PDF** atau **CSV** hanya dengan satu klik.
-- 🌐 **Multi-bahasa:** Mendukung Bahasa Indonesia dan Inggris.
-- 🔒 **Privasi Terjaga:** Data disimpan secara lokal di browser Anda.
+## 🌟 Apa yang Baru di v1.2?
+- 🎨 **Sistem Icon Baru:** Icon resolusi tinggi yang sudah dioptimasi untuk berbagai ukuran (16px - 128px).
+- 📜 **Dokumentasi Lengkap:** README baru yang lebih informatif untuk memudahkan pengguna.
+- 🧹 **Optimasi Paket:** File distribusi yang lebih bersih dan ringan.
 
 ---
 
-## 🛠️ Cara Instalasi (Gratis & Mudah)
+## ✨ Fitur Utama
 
-Karena belum tersedia di Web Store, Anda bisa memasangnya secara manual melalui **Developer Mode**:
-
-1.  **Download:** Unduh file `.zip` (v1.2) atau clone repositori ini.
-2.  **Ekstrak:** Pastikan semua file berada dalam satu folder.
-3.  **Buka Chrome:** Ketik `chrome://extensions/` di address bar.
-4.  **Developer Mode:** Aktifkan tombol **Developer mode** di pojok kanan atas.
-5.  **Load Unpacked:** Klik tombol **Load unpacked** dan pilih folder hasil ekstrak tadi.
-6.  **Selesai!** Pin extension agar muncul di toolbar Anda. 📌
+- 🕒 **Real-time Tracking:** Mencatat waktu *Join* & *Leave* secara otomatis.
+- 🖼️ **Visual Identitas:** Menampilkan foto profil peserta untuk verifikasi cepat.
+- 📊 **Dashboard Interaktif:** Statistik kehadiran yang rapi dan mudah dibaca.
+- 📥 **Ekspor Sekali Klik:** Simpan laporan dalam format **PDF** (siap cetak) atau **CSV** (untuk Excel/Sheets).
+- 🌐 **Dukungan Bahasa:** Tersedia dalam Bahasa Indonesia dan English.
+- 🔒 **100% Privasi:** Semua data diproses dan disimpan secara lokal di browser Anda.
 
 ---
 
-## 💡 Cara Penggunaan
+## 🛠️ Instalasi Cepat (Manual)
 
-1.  **Masuk ke Meeting:** Bergabunglah ke sesi Google Meet seperti biasa.
-2.  **Buka Panel Peserta:** Klik ikon **People/Orang** (👥) di pojok kanan bawah. 
-    > *Penting: Panel ini harus dibuka agar extension bisa membaca daftar peserta dengan akurat.*
-3.  **Cek Status:** Klik ikon extension untuk memastikan status sedang **RECORDING...**.
-4.  **Lihat Hasil:** Klik **View Attendance** untuk membuka dashboard dan mengunduh laporan.
+Karena ekstensi ini didistribusikan secara mandiri, ikuti langkah mudah ini:
 
----
-
-## 📸 Tampilan Dashboard
-
-| Fitur | Deskripsi |
-| :--- | :--- |
-| **PDF Export** | Laporan rapi siap cetak. |
-| **CSV Export** | Data mentah untuk diolah di Excel/Spreadsheet. |
-| **Presence** | Persentase kehadiran berdasarkan durasi meeting. |
+1.  **Unduh:** Download `gmeet-attendance-v1.2.zip` dari [Halaman Release](https://github.com/).
+2.  **Ekstrak:** Buka file zip tersebut ke dalam sebuah folder di komputer Anda.
+3.  **Kelola Ekstensi:** Buka Chrome dan akses `chrome://extensions/`.
+4.  **Mode Pengembang:** Aktifkan **Developer mode** di pojok kanan atas.
+5.  **Pasang:** Klik **Load unpacked** dan pilih folder tempat Anda mengekstrak file tadi.
+6.  **Sematkan:** Klik ikon puzzle (🧩) dan klik ikon pin (📌) di sebelah "Google Meet Attendance Tracker".
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 💡 Tips Penggunaan Efektif
 
-- **HTML5 & CSS3** (Vanilla UI)
-- **JavaScript** (Chrome Extension API)
-- **Pillow** (Untuk pemrosesan icon)
+> [!IMPORTANT]
+> **Penting:** Pastikan panel **People/Orang** (👥) di Google Meet dalam keadaan terbuka atau sesekali dibuka. Ekstensi ini membaca data dari antarmuka tersebut untuk memastikan akurasi 100%.
+
+1. **Start Meeting:** Masuk ke Google Meet.
+2. **Aktifkan Panel:** Klik ikon orang di pojok kanan bawah.
+3. **Cek Rekaman:** Klik icon ekstensi, pastikan muncul tulisan **RECORDING...**.
+4. **Unduh Laporan:** Setelah meeting selesai, klik **View Attendance** dan pilih format laporan yang Anda inginkan.
 
 ---
 
-## 📝 Catatan Penting
-Extension ini bekerja dengan memantau perubahan pada antarmuka Google Meet. Pastikan **Panel People** tetap terbuka atau sesekali dibuka jika ada peserta baru yang bergabung agar data tetap ter-update secara maksimal.
+## 🏗️ Tech Stack
+- **Frontend:** Vanilla JavaScript, HTML5, CSS3.
+- **API:** Chrome Extension API (Manifest V3).
+- **Processing:** Python (Pillow) untuk optimasi aset gambar.
 
-Made with ❤️ for teachers and meeting hosts.
+---
+
+## 🤝 Kontribusi & Saran
+Punya ide fitur baru atau menemukan bug? Silakan buka *Issue* atau kirimkan *Pull Request* di repositori ini.
+
+Made with ❤️ for teachers, students, and professionals.
