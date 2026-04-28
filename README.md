@@ -61,14 +61,6 @@ This extension is also officially available for Firefox users! You can install i
 
 ---
 
-## 🏗️ Tech Stack
-
-- **Frontend:** Vanilla JavaScript, HTML5, CSS3.
-- **API:** Chrome Extension API (Manifest V3).
-- **Processing:** Python (Pillow) for asset optimization.
-
----
-
 ## 🤝 Contribution & Feedback
 
 Have a feature idea or found a bug? Feel free to open an _Issue_ or submit a _Pull Request_ to this repository.
