@@ -8,7 +8,17 @@
 
 ---
 
+## 🦊 Tersedia di Firefox
+
+Ekstensi ini juga tersedia secara resmi untuk pengguna Firefox! Anda dapat langsung mengunduhnya melalui tautan di bawah ini tanpa perlu instalasi manual:
+
+[![Firefox](https://img.shields.io/badge/Firefox-Add--ons-orange.svg)](https://addons.mozilla.org/en-US/firefox/addon/g-attendance/)  
+**[Download via Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/g-attendance/)**
+
+---
+
 ## 🌟 Apa yang Baru di v1.2?
+
 - 🎨 **Sistem Icon Baru:** Icon resolusi tinggi yang sudah dioptimasi untuk berbagai ukuran (16px - 128px).
 - 📜 **Dokumentasi Lengkap:** README baru yang lebih informatif untuk memudahkan pengguna.
 - 🧹 **Optimasi Paket:** File distribusi yang lebih bersih dan ringan.
@@ -17,7 +27,7 @@
 
 ## ✨ Fitur Utama
 
-- 🕒 **Real-time Tracking:** Mencatat waktu *Join* & *Leave* secara otomatis.
+- 🕒 **Real-time Tracking:** Mencatat waktu _Join_ & _Leave_ secara otomatis.
 - 🖼️ **Visual Identitas:** Menampilkan foto profil peserta untuk verifikasi cepat.
 - 📊 **Dashboard Interaktif:** Statistik kehadiran yang rapi dan mudah dibaca.
 - 📥 **Ekspor Sekali Klik:** Simpan laporan dalam format **PDF** (siap cetak) atau **CSV** (untuk Excel/Sheets).
@@ -51,8 +61,8 @@ Karena ekstensi ini didistribusikan secara mandiri, ikuti langkah mudah ini:
 
 ---
 
-<<<<<<< HEAD
 ## 🦊 Tersedia di Firefox
+
 Ekstensi ini juga tersedia secara resmi untuk pengguna Firefox! Anda dapat langsung mengunduhnya melalui tautan di bawah ini tanpa perlu instalasi manual:
 
 [![Firefox](https://img.shields.io/badge/Firefox-Add--ons-orange.svg)](https://addons.mozilla.org/en-US/firefox/addon/g-attendance/)  
@@ -61,6 +71,7 @@ Ekstensi ini juga tersedia secara resmi untuk pengguna Firefox! Anda dapat langs
 ---
 
 ## 🏗️ Tech Stack
+
 - **Frontend:** Vanilla JavaScript, HTML5, CSS3.
 - **API:** Chrome Extension API (Manifest V3).
 - **Processing:** Python (Pillow) untuk optimasi aset gambar.
@@ -68,8 +79,11 @@ Ekstensi ini juga tersedia secara resmi untuk pengguna Firefox! Anda dapat langs
 ---
 
 =======
->>>>>>> 102605f5ae8b8ec7cd451ecc4c8561fab843d717
+
+> > > > > > > 102605f5ae8b8ec7cd451ecc4c8561fab843d717
+
 ## 🤝 Kontribusi & Saran
-Punya ide fitur baru atau menemukan bug? Silakan buka *Issue* atau kirimkan *Pull Request* di repositori ini.
+
+Punya ide fitur baru atau menemukan bug? Silakan buka _Issue_ atau kirimkan _Pull Request_ di repositori ini.
 
 Made with ❤️ for teachers, students, and professionals.
