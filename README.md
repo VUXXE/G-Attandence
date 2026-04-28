@@ -32,11 +32,10 @@
 Since this extension is distributed independently, follow these simple steps:
 
 1.  **Download:** Get `gmeet-attendance-v1.2.zip` from the [Releases Page](https://github.com/).
-2.  **Extract:** Unzip the file into a folder on your computer.
-3.  **Manage Extensions:** Open Chrome and go to `chrome://extensions/`.
-4.  **Developer Mode:** Toggle **Developer mode** on in the top-right corner.
-5.  **Install:** Click **Load unpacked** and select the folder where you extracted the files.
-6.  **Pin it:** Click the puzzle icon (🧩) and pin (📌) "Google Meet Attendance Tracker".
+2.  **Manage Extensions:** Open Chrome and go to `chrome://extensions/`.
+3.  **Developer Mode:** Toggle **Developer mode** on in the top-right corner.
+4.  **Install:** Click **Load unpacked** and select the zip file.
+5.  **Pin it:** Click the puzzle icon (🧩) and pin (📌) "G-Attendance".
 
 ---
 
