@@ -51,6 +51,14 @@ Karena ekstensi ini didistribusikan secara mandiri, ikuti langkah mudah ini:
 
 ---
 
+## 🦊 Tersedia di Firefox
+Ekstensi ini juga tersedia secara resmi untuk pengguna Firefox! Anda dapat langsung mengunduhnya melalui tautan di bawah ini tanpa perlu instalasi manual:
+
+[![Firefox](https://img.shields.io/badge/Firefox-Add--ons-orange.svg)](https://addons.mozilla.org/en-US/firefox/addon/g-attendance/)  
+**[Download via Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/g-attendance/)**
+
+---
+
 ## 🏗️ Tech Stack
 - **Frontend:** Vanilla JavaScript, HTML5, CSS3.
 - **API:** Chrome Extension API (Manifest V3).
