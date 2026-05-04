@@ -1,6 +1,6 @@
 # 🎓 G-Attendance 🚀
 
-[![Version](https://img.shields.io/badge/version-1.2-blue.svg)](https://github.com/)
+[![Version](https://img.shields.io/badge/version-1.3-blue.svg)](https://github.com/)
 [![Manifest](https://img.shields.io/badge/manifest-V3-orange.svg)](https://developer.chrome.com/docs/extensions/mv3/intro/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
@@ -8,11 +8,11 @@
 
 ---
 
-## 🌟 What's New in v1.2?
+## 🌟 What's New in v1.3?
 
-- 🎨 **New Icon System:** High-resolution icons optimized for all sizes (16px - 128px).
-- 📜 **Complete Documentation:** Improved README to help new users get started easily.
-- 🧹 **Package Optimization:** Cleaned up distribution files for a lighter footprint.
+- 🐛 **Duplicate Bug Fixed:** Fixed an issue where participants presenting or joining as guests were recorded as duplicates (e.g., stripping "(You)" and "(Presenting)").
+- 🎨 **Rounded UI Design:** Updated the dashboard and meeting buttons with a softer, rounded neo-brutalism aesthetic for a more modern feel.
+- 📦 **Previous v1.2 Updates:** High-res icons, complete documentation, and lighter packages!
 
 ---
 
@@ -31,7 +31,7 @@
 
 Since this extension is distributed independently, follow these simple steps:
 
-1.  **Download:** Get `gmeet-attendance-v1.2.zip` from the [Releases Page](https://github.com/).
+1.  **Download:** Get `gmeet-attendance-v1.3.zip` from the [Releases Page](https://github.com/).
 2.  **Manage Extensions:** Open Chrome and go to `chrome://extensions/`.
 3.  **Developer Mode:** Toggle **Developer mode** on in the top-right corner.
 4.  **Install:** Click **Load unpacked** and select the zip file.

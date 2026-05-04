@@ -93,6 +93,9 @@ async function scrape() {
           name = el.innerText.split('\n')[0].trim();
         }
 
+        // Remove common Google Meet suffixes to prevent duplicates
+        name = name.replace(/\s*\((You|Anda|Presenting|Presentation|Presenter|Presentasi|Guest|Tamu)\)$/i, '').trim();
+
         if (name && name.length > 1 && !name.includes(':')) {
           const img = el.querySelector('img');
           participantNames.set(name, img?.src || null);
@@ -159,6 +162,7 @@ function createUI() {
     font-size: 14px;
     font-family: 'Courier New', monospace;
     transition: all 0.1s;
+    border-radius: 12px;
   `;
 
   btn.onmousedown = () => {
